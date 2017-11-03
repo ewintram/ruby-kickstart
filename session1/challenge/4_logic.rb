@@ -10,4 +10,13 @@
 # grade(15, true)   # => "B"
 
 def grade(num_books, reads_books)
+	if reads_books == true
+		return "A" if num_books > 20
+		return "C" if num_books < 10
+		return "B"
+	else
+		return "B" if num_books > 20
+		return "D" if num_books < 10
+		return "C"
+	end 
 end
